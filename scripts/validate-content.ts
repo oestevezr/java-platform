@@ -1,0 +1,15 @@
+import { readFileSync } from 'node:fs';
+import { z } from 'zod';
+import { objectiveSchema, examProfileSchema, resourceSchema, questionBankSchema } from '@netec/contracts';
+const read = (name: string) => JSON.parse(readFileSync('content/' + name + '.json','utf8'));
+const objectives = z.array(objectiveSchema).parse(read('objectives'));
+const profile = examProfileSchema.parse(read('exam-profile'));
+const resources = z.array(resourceSchema).parse(read('resources'));
+const questions = questionBankSchema.parse(read('questions'));
+const ids = new Set(objectives.map((item) => item.id));
+if (ids.size !== objectives.length) throw new Error('Objetivos duplicados.');
+for (const resource of resources) if (resource.objectiveIds.some((id) => !ids.has(id))) throw new Error('Referencia a objetivo desconocido.');
+for (const question of questions) if (question.objectiveIds.some((id) => !ids.has(id))) throw new Error('Pregunta con objetivo desconocido.');
+console.log('Scaffold válido: ' + objectives.length + ' objetivos, ' + resources.length + ' referencias, ' + questions.length + ' preguntas.');
+console.log(profile.verified ? 'Perfil documentado.' : 'Formato NETEC pendiente; no es una réplica oficial.');
+if (questions.length < 600) console.log('Banco completo pendiente. Este control no acredita cobertura editorial.');

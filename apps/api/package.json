@@ -1,0 +1,17 @@
+{
+  "name": "@netec/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/local.ts",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@netec/contracts": "*",
+    "@aws-sdk/client-dynamodb": "^3.910.0",
+    "@aws-sdk/lib-dynamodb": "^3.910.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11"
+  }
+}

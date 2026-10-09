@@ -1,0 +1,79 @@
+[
+  {
+    "id": "java-fundamentals",
+    "title": "Tipos, operadores y flujo de control",
+    "scope": "java",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "provisional",
+    "references": [
+      "https://docs.oracle.com/javase/specs/jls/se8/html/index.html"
+    ],
+    "note": "Contenido Java de base; relevancia NETEC pendiente de referencias."
+  },
+  {
+    "id": "java-objects",
+    "title": "Objetos, herencia y excepciones",
+    "scope": "java",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "provisional",
+    "references": [
+      "https://docs.oracle.com/javase/specs/jls/se8/html/index.html"
+    ]
+  },
+  {
+    "id": "java-streams",
+    "title": "Colecciones, lambdas y streams",
+    "scope": "java",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "provisional",
+    "references": [
+      "https://docs.oracle.com/javase/8/docs/api/"
+    ]
+  },
+  {
+    "id": "java-version-differences",
+    "title": "Diferencias entre Java 8 y Java 11",
+    "scope": "java",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "provisional",
+    "references": [
+      "https://docs.oracle.com/en/java/javase/11/docs/api/"
+    ]
+  },
+  {
+    "id": "aso-documentation",
+    "title": "Arquitectura ASO",
+    "scope": "aso",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "pending",
+    "references": [],
+    "note": "Esperando documentación aportada; no se han supuesto reglas."
+  },
+  {
+    "id": "apx-documentation",
+    "title": "Arquitectura APX",
+    "scope": "apx",
+    "javaVersions": [
+      "8",
+      "11"
+    ],
+    "status": "pending",
+    "references": [],
+    "note": "Esperando documentación aportada; no se han supuesto reglas."
+  }
+]

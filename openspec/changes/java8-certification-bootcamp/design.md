@@ -1,6 +1,6 @@
 ﻿## Context
 
-El proyecto contiene planificación OpenSpec y herramientas de agentes; todavía no hay aplicación ni repositorio Git. El objetivo, aclarado por el usuario, es preparar un examen NETEC para ASO/APX de BBVA basado en Java 8–11 con preguntas de base OCA/OCP. Aún no se dispone del temario ni banco interno. La última decisión incorpora cuentas y seguimiento persistente de cada candidato en nube.
+El proyecto cuenta con repositorio Git y un scaffold en la rama orlando-proposal: frontend React, API Lambda TypeScript, contratos compartidos, pruebas e infraestructura declarativa. No se ha desplegado en AWS. El objetivo, aclarado por el usuario, es preparar un examen NETEC para ASO/APX de BBVA basado en Java 8–11 con preguntas de base OCA/OCP. Aún no se dispone del temario ni banco interno. La última decisión incorpora cuentas y seguimiento persistente de cada candidato en nube.
 
 ## Goals / Non-Goals
 

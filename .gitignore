@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.aws-sam/
+.env
+.env.*
+!.env.example
+apps/web/.env.local
+content/sources/*
+!content/sources/.gitkeep
+.serena/

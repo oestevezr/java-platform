@@ -4,8 +4,8 @@
 - [ ] 1.2 Crear matriz NETEC ASO/APX Java 8–11 con base OCA/OCP y estado confirmado/provisional/pendiente; verificar ID, versión, referencia y cobertura visible.
 - [ ] 1.3 Preparar perfil NETEC versionado y confirmar parámetros con documentos aportados; verificar que valores desconocidos se rotulen educativos sin heredar formato Oracle.
 - [ ] 1.4 Validar con Zod contenido, API, intentos, procedencia y versiones Java; verificar rechazo de datos malformados/IDs duplicados.
-- [ ] 1.5 Configurar React Router con hash, CSS Modules, MDX y caché IndexedDB mediante idb; verificar deep links, build y aislamiento de caché por cuenta.
-- [ ] 1.6 Configurar Vitest/Testing Library, Playwright y ESLint; verificar motor, flujo de navegador y lint.
+- [x] 1.5 Configurar React Router con hash, CSS Modules, MDX y caché IndexedDB mediante idb; verificar deep links, build y aislamiento de caché por cuenta.
+- [x] 1.6 Configurar Vitest/Testing Library, Playwright y ESLint; verificar motor, flujo de navegador y lint.
 - [ ] 1.7 Diseñar contratos HTTP API y esquema DynamoDB por sub, respuestas fragmentadas y directorio paginado; verificar consultas sin scans de historial ni ítems ilimitados.
 
 ## 2. Interfaz y apuntes
@@ -15,7 +15,7 @@
 - [ ] 2.3 Escribir apuntes de fundamentos Java de base OCA por grupos de objetivos, cada lote revisado; verificar matriz completa de tipos, operadores, control, arrays, métodos, Strings, objetos, herencia, excepciones y APIs básicas.
 - [ ] 2.4 Escribir apuntes avanzados de base OCP por grupos de objetivos, cada lote revisado; verificar matriz completa de diseño, genéricos/colecciones, lambdas/streams, fechas, excepciones, I/O/NIO.2, concurrencia, JDBC y localización.
 - [ ] 2.5 Revisar ejemplos/trazas con JDK objetivo 8/11 y referencias normativas; verificar versión explícita, diferencias entre versiones, ejemplo, contraejemplo, actividad y pregunta enlazada.
-- [ ] 2.6 Preparar estructura de apuntes ASO/APX y cobertura pendiente; verificar que contenidos específicos se incorporen solo desde documentación aportada y ninguna regla se invente.
+- [x] 2.6 Preparar estructura de apuntes ASO/APX y cobertura pendiente; verificar que contenidos específicos se incorporen solo desde documentación aportada y ninguna regla se invente.
 
 ## 3. Producción editorial de preguntas
 
@@ -69,3 +69,9 @@ Cada lote se procesa en sublotes de 10-20 preguntas durante aplicación; no publ
 - [ ] 7.6 Documentar despliegue AWS CLI/SAM y rollback con conservación de progreso/backup; verificar que retirar stack no borre datos sin intención explícita.
 - [ ] 7.7 Preparar GitHub Actions/OIDC al existir repositorio; verificar ausencia de claves AWS persistentes y publicación solo tras checks.
 - [ ] 7.8 Resolver modalidad de alta y audiencia del banco interno antes de publicación; verificar que preguntas/soluciones internas no estén en build público y solo se entreguen mediante API al público autorizado.
+
+## Estado del scaffold
+
+Implementación inicial en orlando-proposal. Las tareas parciales permanecen sin marcar: contratos de contenido/progreso, evaluación pura, autorización de las rutas actuales, plan flexible, panel administrativo básico, configuración Cognito y plantilla SAM. La autenticación real, el motor completo de exámenes, historial, repasos y banco revisado siguen pendientes. Las estadísticas candidatas se proyectan en servidor sin campos internos; AWS será la fuente de verdad e IndexedDB una caché por cuenta. La vista local utiliza datos temporales y está excluida del acceso de producción.
+
+Validación: typecheck, lint, 25 pruebas unitarias, builds, validación estructural de contenido/infraestructura y 6 pruebas de navegador en escritorio/móvil. La validación estructural no sustituye SAM validate/build/change set, todavía pendientes.

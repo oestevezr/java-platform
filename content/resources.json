@@ -1,0 +1,37 @@
+[
+  {
+    "id": "jls8",
+    "title": "Java Language Specification · Java 8",
+    "url": "https://docs.oracle.com/javase/specs/jls/se8/html/index.html",
+    "type": "documentation",
+    "language": "en",
+    "scope": "java",
+    "javaVersions": [
+      "8"
+    ],
+    "objectiveIds": [
+      "java-fundamentals",
+      "java-objects"
+    ],
+    "cost": "free",
+    "reviewedAt": null,
+    "reason": "Referencia normativa para contrastar reglas del lenguaje."
+  },
+  {
+    "id": "api11",
+    "title": "Documentación de la API · Java 11",
+    "url": "https://docs.oracle.com/en/java/javase/11/docs/api/",
+    "type": "documentation",
+    "language": "en",
+    "scope": "java",
+    "javaVersions": [
+      "11"
+    ],
+    "objectiveIds": [
+      "java-version-differences"
+    ],
+    "cost": "free",
+    "reviewedAt": null,
+    "reason": "Consultar disponibilidad y contratos de las APIs."
+  }
+]
